@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.css'
 import Head from 'next/head'
 
 import { Cinzel } from 'next/font/google'
+import SideBar from '@/components/SideBar'
 
 const font = Cinzel({ subsets: ['latin'], weight: ['400'] })
 
@@ -23,6 +24,7 @@ export default function Home() {
             </Head>
             <main className={`${font.className}`}>
                 <h1>Criador de Site</h1>
+                <SideBar />
             </main>
         </>
     )

@@ -1,0 +1,46 @@
+.container {
+    width: 400px;
+    min-height: 100vh;
+    height: 100%;
+
+    background-color: #0005;
+
+    .logo {
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .item {
+        display: flex;
+        padding: 0.7rem;
+
+        user-select: none;
+
+        cursor: pointer;
+
+        .disable {
+            display: none;
+        }
+
+        .indicator {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+
+            padding: 0 1rem;
+        }
+    }
+
+    .list {
+        padding: 0.5rem 2rem;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            gap: 0.6rem;
+
+            cursor: pointer;
+        }
+    }
+}

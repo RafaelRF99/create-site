@@ -5,6 +5,10 @@
 
     background-color: #0005;
 
+    .top {
+        display: none;
+    }
+
     .logo {
         text-align: center;
         padding: 2rem 0;
@@ -41,6 +45,35 @@
             gap: 0.6rem;
 
             cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        min-height: 100%;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 0 1rem;
+
+            button {
+                width: 40px;
+                height: 40px;
+
+                border: none;
+                border-radius: 2px;
+            }
         }
     }
 }

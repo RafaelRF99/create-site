@@ -1,12 +1,31 @@
 import styles from './SideBar.module.scss'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import item from './item.json'
 import Link from 'next/link'
 
+import item from './item.json'
+
 export default function SideBar() {
+    const [windows, setWindows] = useState(true)
     const [disable, setDisable] = useState<number | null>(null)
+
+    const checkScreenSize = () => {
+        if (window.innerWidth > 600) {
+            setWindows(false)
+        } else {
+            setWindows(true)
+        }
+    }
+
+    useEffect(() => {
+        checkScreenSize()
+        window.addEventListener('resize', checkScreenSize)
+
+        return () => {
+            window.removeEventListener('resize', checkScreenSize)
+        }
+    }, [])
 
     function handleDisable(id: number) {
         if (disable === id) {
@@ -70,8 +89,11 @@ export default function SideBar() {
 
     return (
         <nav className={styles.container}>
-            <h1 className={styles.logo}>SideBar</h1>
-            <div>{handleItem()}</div>
+            <div className={styles.top}>
+                <h1 className={styles.logo}>SideBar</h1>
+                <button onClick={() => setWindows(!windows)}>=</button>
+            </div>
+            <div>{windows ? '' : handleItem()}</div>
         </nav>
     )
 }

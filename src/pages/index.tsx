@@ -6,6 +6,7 @@ import Head from 'next/head'
 
 import SideBar from '@/components/SideBar'
 import Display from '@/components/Display'
+import NavBar from '@/components/NavBar'
 
 const font = Phudu({ subsets: ['latin'], weight: ['400'] })
 
@@ -25,6 +26,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={`${font.className}`}>
+                <NavBar />
                 <SideBar />
                 <Display />
             </main>

@@ -5,6 +5,7 @@ import { Phudu } from 'next/font/google'
 import Head from 'next/head'
 
 import SideBar from '@/components/SideBar'
+import Display from '@/components/Display'
 
 const font = Phudu({ subsets: ['latin'], weight: ['400'] })
 
@@ -24,8 +25,8 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={`${font.className}`}>
-                <h1>Criador de Site</h1>
                 <SideBar />
+                <Display />
             </main>
         </>
     )

@@ -1,5 +1,5 @@
 [
-    { "id": 1, "title": "Visão Geral", "router": "/" },
+    { "id": 1, "title": "Dashboard", "router": "/" },
     {
         "id": 2,
         "title": "Viagens",
@@ -9,13 +9,13 @@
                 "router": "/viagem"
             },
             "option2": {
-                "item": "viagens/Rotas",
-                "router": "/rotanav"
+                "item": "Agendar",
+                "router": "/agendar"
             }
         }
     },
-    { "id": 3, "title": "Embarcação", "router": "/embarcacao" },
-    { "id": 4, "title": "Porto", "router": "/porto" },
+    { "id": 3, "title": "Endereço", "router": "/endereco" },
+    { "id": 4, "title": "Modo", "router": "/modo" },
     {
         "id": 5,
         "title": "Motorista",
@@ -23,16 +23,19 @@
         "router": "/motorista"
     },
     { "id": 6, "title": "Usuários" },
-    { "id": 7, "title": "Agências" },
-    { "id": 8, "title": "Relatórios" },
     {
-        "id": 9,
-        "title": "Financeiro",
+        "id": 7,
+        "title": "Biblioteca",
         "options": {
             "option1": {
-                "item": "Lançamentos",
-                "router": ""
+                "item": "Livros",
+                "router": "/livros"
             }
         }
+    },
+    { "id": 8, "title": "Extratos" },
+    {
+        "id": 9,
+        "title": "Financeiro"
     }
 ]

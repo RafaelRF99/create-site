@@ -7,7 +7,9 @@
     color: #000;
 
     .top {
-        display: none;
+        button {
+            display: none;
+        }
     }
 
     .logo {
@@ -81,6 +83,10 @@
             button {
                 width: 40px;
                 height: 40px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 border: none;
                 border-radius: 2px;

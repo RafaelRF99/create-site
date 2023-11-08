@@ -1,5 +1,5 @@
 [
-    { "id": 1, "title": "Visão Geral", "icon": "TreeStructure", "router": "/" },
+    { "id": 1, "title": "Visão Geral", "router": "/" },
     {
         "id": 2,
         "title": "Viagens",
@@ -12,20 +12,19 @@
                 "item": "viagens/Rotas",
                 "router": "/rotanav"
             }
-        },
-        "icon": "SuitcaseRolling"
+        }
     },
-    { "id": 3, "title": "Embarcação", "icon": "Boat", "router": "/embarcacao" },
-    { "id": 4, "title": "Porto", "icon": "Anchor", "router": "/porto" },
+    { "id": 3, "title": "Embarcação", "router": "/embarcacao" },
+    { "id": 4, "title": "Porto", "router": "/porto" },
     {
         "id": 5,
         "title": "Motorista",
-        "icon": "ChalkboardTeacher",
+
         "router": "/motorista"
     },
-    { "id": 6, "title": "Usuários", "icon": "Users" },
-    { "id": 7, "title": "Agências", "icon": "Suitcase" },
-    { "id": 8, "title": "Relatórios", "icon": "File" },
+    { "id": 6, "title": "Usuários" },
+    { "id": 7, "title": "Agências" },
+    { "id": 8, "title": "Relatórios" },
     {
         "id": 9,
         "title": "Financeiro",
@@ -34,7 +33,6 @@
                 "item": "Lançamentos",
                 "router": ""
             }
-        },
-        "icon": "PiggyBank"
+        }
     }
 ]

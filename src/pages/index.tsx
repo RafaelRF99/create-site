@@ -7,6 +7,7 @@ import Head from 'next/head'
 import SideBar from '@/components/SideBar'
 import Display from '@/components/Display'
 import NavBar from '@/components/NavBar'
+import Footer from '@/components/Footer'
 
 const font = Phudu({ subsets: ['latin'], weight: ['400'] })
 
@@ -29,6 +30,7 @@ export default function Home() {
                 <NavBar />
                 <SideBar />
                 <Display />
+                <Footer />
             </main>
         </>
     )

@@ -65,6 +65,7 @@ export default function SideBar() {
                                         >
                                             <li>{item.options.option1.item}</li>
                                         </Link>
+                                        <hr />
                                         <Link
                                             href={
                                                 item.options.option2

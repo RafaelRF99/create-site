@@ -3,7 +3,8 @@
     min-height: 100vh;
     height: 100%;
 
-    background-color: #0005;
+    background-color: #8f8f8f3e;
+    color: #000;
 
     .top {
         display: none;
@@ -33,6 +34,10 @@
 
             padding: 0 1rem;
         }
+
+        &:hover {
+            color: #787878;
+        }
     }
 
     .list {
@@ -45,6 +50,12 @@
             gap: 0.6rem;
 
             cursor: pointer;
+
+            li {
+                &:hover {
+                    color: #787878;
+                }
+            }
         }
     }
 }

@@ -4,10 +4,7 @@ import { Phudu } from 'next/font/google'
 
 import Head from 'next/head'
 
-import SideBar from '@/components/SideBar'
-import Display from '@/components/Display'
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/Footer'
+import Layout2 from '@/components/Layouts/Layout2'
 
 const font = Phudu({ subsets: ['latin'], weight: ['400'] })
 
@@ -27,10 +24,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={`${font.className}`}>
-                <NavBar />
-                <SideBar />
-                <Display />
-                <Footer />
+                <Layout2 />
             </main>
         </>
     )
